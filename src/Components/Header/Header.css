@@ -1,0 +1,59 @@
+.header {
+    border: 1px solid #000;
+    height: 280px;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.header .logo {
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+.title-container {
+    color: #ffffffb2;
+    text-align: center;
+    font-size: 2em;
+}
+
+.nav {
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffffe0;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+}
+
+.nav li button {
+    color: #ffffffe0;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid #ffffffe0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav li button:hover {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+nav li img {
+    height: 30px;
+    border-radius: 50px;
+}

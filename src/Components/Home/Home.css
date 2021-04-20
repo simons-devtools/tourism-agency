@@ -1,0 +1,8 @@
+.home-container {
+    margin: 50px;
+}
+
+.badget-con {
+    display: flex;
+    flex-wrap: wrap;
+}
