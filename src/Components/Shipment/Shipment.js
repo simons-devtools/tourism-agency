@@ -1,15 +1,19 @@
 import { Container } from '@material-ui/core';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../App';
 import './Shipment.css';
 
 const Shipment = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const history = useHistory();
 
     const onSubmit = data => {
         console.log(data);
+        alert('You are successfully booking.');
+        history.push("/")
     }
 
     // console.log(watch("example"));

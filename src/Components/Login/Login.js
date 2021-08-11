@@ -127,41 +127,10 @@ function Login() {
         e.preventDefault(); // Stop the reload page
     }
 
-
-    // Update user profile/props func
-    // -----------------------------------
-    // ...
-
     return (
         <Container className="main-log">
-            <div className="signup-form">
-                <h2>Give me your identity</h2>
-
-                {/* SignUp || SignIn with form */}
-                <form onSubmit={handleSubmit}>
-                    {newUser && <input type="name" name="name" onBlur={handleBlur} placeholder="Name" required />} <br />
-                    <input type="email" name="email" onBlur={handleBlur} placeholder="Email" required /> <br />
-                    <input type="password" name="password" onBlur={handleBlur} placeholder="Password" required /> <br />
-                    <input type="submit" value={newUser ? 'Create your account' : 'Login your account'} className="submit-btn" />
-                </form>
-
-                <div className="toggle-sign">
-                    <input type="checkbox" name="newUser" onChange={() => setNewUser(!newUser)} /> {/* For the conditional route */}
-                    <label htmlFor="newUser">You have no account?</label>
-                </div>
-            </div>
-
-            {/* SignIn with button */}
-            <div className="signin-signout">
-                <p>-OR-</p>
-                <div>
-                    <button onClick={googleSignIn}>Sign In Google</button>
-                </div>
-
-                <div>
-                    <button onClick={facebookSignIn}>Sign In Facebook</button>
-                </div>
-            </div>
+            <h1>Login your google account</h1>
+            <button onClick={googleSignIn}>Sign In Google</button>
         </Container>
     );
 }
